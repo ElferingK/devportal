@@ -1,0 +1,129 @@
+
+$text-link-color: #7ec78a;
+$button-background-color: #4562AB;
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  background: #e1e1e1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  height: 70px;
+  background: #223e85;
+}
+
+.logo {
+  //width: 100%;
+  height: 65px;
+}
+
+.content {
+  margin: 45px;
+}
+
+.card {
+  background: #fff;
+  color: #000;
+  width: 70%;
+  margin: 0 auto;
+  padding: 45px;
+  max-width: 1200px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+h1,
+h2,
+strong {
+  font-weight: 900;
+}
+
+h1,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: cornflowerblue;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  color: $text-link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.button {
+  display: inline-block;
+  background: $button-background-color;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.button:hover {
+  background: $text-link-color;
+}
+
+.links a:hover {
+  color: $button-background-color;
+}
+
+.accent-color {
+  color: $text-link-color;
+}
+
+.links {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.btn-big {
+  font-size: 1.5rem;
+}
+
+.btn-small {
+  font-size: .75rem;
+}
+
+label {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Apply these styles when the screen width is 600px or less */
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .content {
+    margin: 10px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 15px;
+    padding-top: 20px;
+  }
+}
